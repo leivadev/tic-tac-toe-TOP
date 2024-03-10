@@ -113,3 +113,136 @@ section {
     background-color: #ffca68;
     box-shadow: 0px -8px 0px 0px #cc8b13 inset;
 }
+
+.game-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.game-header {
+    background-color: #dd500e;
+    box-shadow: 0px -4px 0px 0px #6d2e04 inset;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+
+    .icon-box {
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+}
+
+.turn-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.3rem;
+    padding: 1.5rem 2.5rem;
+    background-color: #ec6408;
+    border-radius: 1rem;
+    box-shadow: 0px -4px 0px 0px #c4544c inset;
+}
+
+.turn-box p,
+.restart-btn p {
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+}
+
+.restart-btn {
+    background-color: #ec6408;
+    padding: 1.4rem;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0px -4px 0px 0px #c4544c inset;
+    justify-self: end;
+    cursor: pointer;
+}
+
+.game-container {
+    background-color: #d8aa89;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.game-tiles {
+    width: 14rem;
+    height: 14rem;
+    background-color: #9e3900;
+    border-radius: 1.5rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.game-tiles-x,
+.game-tiles-o {
+    background-size: 50%;
+    padding: 3rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.game-tiles-x {
+    background: url("../assets/X.svg"), #fff;
+}
+
+.game-tiles-o {
+    background: url("../assets/O.svg"), #fff;
+}
+
+.game-scores {
+    display: flex;
+    gap: 2rem;
+}
+
+.game-scores>div {
+    padding: 1rem 4rem;
+    text-align: center;
+    border-radius: 1.5rem;
+}
+
+.x-name,
+.o-name,
+.ties-name {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.x-score,
+.o-score,
+.ties-score {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0.15rem;
+    color: #fff;
+}
+
+.x-box {
+    background-color: #c33131;
+    box-shadow: 0px -4px 0px 0px #992121 inset;
+}
+
+.ties-box {
+    background-color: #afb8bd;
+    box-shadow: 0px -4px 0px 0px #858585 inset;
+}
+
+.o-box {
+    background-color: #f2b137;
+    box-shadow: 0px -4px 0px 0px #cc8b13 inset;
+}
