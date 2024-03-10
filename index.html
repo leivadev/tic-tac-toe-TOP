@@ -4,14 +4,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/favicon.svg" sizes="64x64" type="image/svg">
     <title>Tic Tac Toe | Leivadev</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
+    <section class="home-section">
+        <div class="icon-box">
+            <h1 class="home-title">Tic Tac Toe</h1>
+            <img src="assets/X.svg" alt="icon x" class="main-icons main-x-icon">
+            <img src="assets/O.svg" alt="icon o" class="main-icons main-o-icon">
+        </div>
+        <div class="select-box">
+            <h2 class="select-title">Select player 1's mark</h2>
+            <button class="select-icons-btn" data-value="x"><img src="assets/X.svg" alt="icon x"
+                    class="main-icons main-x-icon"></button>
+            <button class="select-icons-btn" data-value="o"><img src="assets/O.svg" alt="icon o"
+                    class="main-icons main-o-icon"></button>
+        </div>
+        <div class="reminder-box">Remember: X goes first</div>
+        <div class="select-opponent">
+            <button class="select-opp-btn" data-value="human">Vs. player</button>
+            <button class="select-opp-btn" data-value="cpu">Vs. minimax cpu</button>
+        </div>
+    </section>
+    <section class="game-section">
+        <header class="game-header">
+            <div class="icon-box">
+                <img src="assets/X.svg" alt="icon x" class="main-icons main-x-icon">
+                <img src="assets/O.svg" alt="icon o" class="main-icons main-o-icon">
+            </div>
+            <div class="turn-box">
+                <img src="assets/X.svg" alt="icon x turn">
+                <p>turn</p>
+            </div>
+            <button class="restart-btn">
+                <img src="assets/restart.svg" alt="restart icon">
+                <p>restart</p>
+            </button>
+        </header>
 
+        <div class="game-container">
+            <div class="game-tiles"></div>
+            <div class="game-tiles"></div>
+            <div class="game-tiles"></div>
+            <div class="game-tiles"></div>
+            <div class="game-tiles"></div>
+            <div class="game-tiles"></div>
+            <div class="game-tiles"></div>
+            <div class="game-tiles"></div>
+            <div class="game-tiles"></div>
+        </div>
+
+        <div class="game-scores">
+            <div class="x-box">
+                <p class="x-name">X (you)</p>
+                <p class="x-score">0</p>
+            </div>
+            <div class="ties-box">
+                <p class="ties-name">ties</p>
+                <p class="ties-score">0</p>
+            </div>
+            <div class="o-box">
+                <p class="o-name">O (cpu)</p>
+                <p class="o-score">0</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal game-over-box">
+        <p class="result-text"></p>
+        <div class="continue-box">
+            <button class="quit-btn">Quit</button>
+            <button class="play-again-btn">Play again</button>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+    <div class="modal restart-box">
+        <h2 class="restart-text">Are you sure you want to restart the game?</p>
+            <div class="restart-options">
+                <button class="cancel-btn">Cancel</button>
+                <button class="confirm-btn">Restart</button>
+            </div>
+    </div>
 </body>
-
-<script src="script.js"></script>
 
 </html>
