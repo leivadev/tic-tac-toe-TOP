@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Kreon:wght@300..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Kreon", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #b41f1f, #b02018);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+section {
+    max-width: 50rem;
+    padding: 2rem;
+    position: relative;
+}
+
+.home-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.icon-box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.main-icons {
+    height: 3rem;
+}
+
+.home-title {
+    font-size: 4rem;
+    color: #fff;
+}
+
+.select-box {
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0px -8px 0px 0px #6d2e04 inset;
+    background: #d8aa89;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.select-title {
+    grid-column: span 2;
+    font-size: 2.5rem;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    color: #101010;
+}
+
+.select-icons-btn {
+    display: flex;
+    background: #6d2e04;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem 8rem;
+    cursor: pointer;
+}
+
+.select-icons-btn:hover {
+    background: #813f13;
+    transition: background-color 0.5s;
+}
+
+.reminder-box {
+    color: #fff;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+
+.select-opponent {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.select-opp-btn {
+    padding: 2rem 8rem;
+    text-align: center;
+    border: none;
+    border-radius: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+    transition: background-color 0.4s;
+
+    cursor: pointer;
+    background-color: #f2b137;
+    box-shadow: 0px -8px 0px 0px #cc8b13 inset;
+}
+
+.select-opp-btn:hover {
+    background-color: #ffca68;
+    box-shadow: 0px -8px 0px 0px #cc8b13 inset;
+}
