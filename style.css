@@ -246,3 +246,78 @@ section {
     background-color: #f2b137;
     box-shadow: 0px -4px 0px 0px #cc8b13 inset;
 }
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s;
+
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    transition: all 0.6s;
+    transform: translateY(100%);
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 0px 0px 0px 1px #000;
+    z-index: 99;
+}
+
+.game-over-box,
+.restart-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.result-text,
+.restart-text {
+    font-size: 1.5rem;
+    letter-spacing: 0.15rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000000;
+}
+
+.continue-box,
+.restart-options {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.quit-btn,
+.play-again-btn,
+.cancel-btn,
+.confirm-btn {
+    padding: 1.5rem 1.7rem;
+    cursor: pointer;
+
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 1rem;
+    transition: background-color 0.4s;
+}
+
+.restart-box,
+.game-over-box,
+.overlay {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.game-section {
+    display: none;
+}
